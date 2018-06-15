@@ -1,0 +1,52 @@
+#circle {
+    width: 60px;
+    height: 60px;
+    background: green;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+	margin: 30px 90% auto;
+	animation-name: slidein;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+}
+#square {
+ width: 160px;
+ height: 160px;
+ margin: 30px auto;
+ background-color: red;
+}
+#romb {
+ width: 80px;
+ height: 80px;
+ position: absolute;
+ margin: 40px 40px auto;
+ background: blue;
+        transform: rotate(45deg);
+animation-name: spin;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+}
+
+ @keyframes spin {
+  0% {
+     transform: rotate(0deg);
+  }
+  }
+  
+/*  @keyframes slidein {
+  0% {
+} 
+
+  100%
+   left: 300px ;
+  }*/
+  
+  @keyframes slidein {   /* назовём анимацию: "go-left-right" */
+    from {
+      left: 0px;               /* от: left: 0px */
+    }
+    to {
+      left: calc(100% - 50px); /* до: left: 100%-50px */
+    }
+  }
